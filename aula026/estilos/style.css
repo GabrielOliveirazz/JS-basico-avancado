@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    background-color: rgb(0, 111, 111);
+    font-family: 'Open Sans', sans-serif;;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.556);
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    width: 600px;
+}   
+
+label {
+    display: block;
+    margin-left: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+input {
+    display: block;
+    font-size: 1.1em;
+    width: 550px;
+    height: 30px;
+    margin-top: 10px;
+    margin: auto;
+    border-radius: 5px;
+    border-style: groove;
+}
+
+button {
+    background-color: rgb(0, 111, 111);
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    width: 555px;
+    height: 35px;
+    margin: auto;
+    margin: 25px 0px 0px 22px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: rgb(0, 111, 111);
+    background-color: lightgrey;
+    border: 1px groove rgb(0, 111, 111);
+}
+
+.paragrafo-resultado {
+    background-color: rgb(109, 255,0182);
+    padding: 10px 20px;
+}
