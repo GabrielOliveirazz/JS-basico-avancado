@@ -58,4 +58,9 @@ button:hover {
 .paragrafo-resultado {
     background-color: rgb(109, 255,0182);
     padding: 10px 20px;
+} 
+
+.bad {
+    background-color: rgb(255, 97, 97);
+    padding: 10px 20px;
 }
