@@ -1,7 +1,7 @@
 // if pode ser usado sozinho
 
 // else precisa de um if antes
-
+ 
 const hora = 50
 
 if (hora >=0 && hora <=11) {
