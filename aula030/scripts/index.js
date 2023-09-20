@@ -90,6 +90,7 @@ function criaDate(data) {
 h1.innerHTML = criaDate(data)
 */
 
+/*
 const h1 = document.querySelector('#container h1')
 const data = new Date()
 const opcoes = {
@@ -98,4 +99,4 @@ const opcoes = {
 }
 
 
-h1.innerHTML = data.toLocaleDateString('pt-BR', opcoes) //{ dateStyle: 'full', TIME STYLE N QUER PEGAR timeStyle: 'short',})
+h1.innerHTML = data.toLocaleDateString('pt-BR', opcoes) //{ dateStyle: 'full', TIME STYLE N QUER PEGAR timeStyle: 'short',})*/
