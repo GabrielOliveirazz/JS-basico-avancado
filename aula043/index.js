@@ -5,7 +5,7 @@ function fizzBuzz(numero) {
     if (numero % 5 === 0) return 'Buzz'
 }
 
-console.log(i, fizzBuzz(i))
+
 for (let i = 0; i <= 100; i++) {
     console.log(i, fizzBuzz(i))
 }
