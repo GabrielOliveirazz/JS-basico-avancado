@@ -17,6 +17,7 @@ form.addEventListener('submit', function (e) {
         return;
     }
     
+    
 
     const imc = getImc(peso, altura)
     const nivelImc = getNivelImc(imc)
