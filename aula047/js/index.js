@@ -23,25 +23,22 @@ function relogio() {
     document.addEventListener('click', function(e) {
         const el = e.target
 
-        if(el.classList.contains('zerar')) {
+        if (el.classList.contains('zerar')) {
             clearInterval(timer)
             relogio.innerHTML = '00:00:00'
             segundos = 0
         }
-        
-        if(el.classList.contains('iniciar')) {
+
+        if (el.classList.contains('iniciar')) {
             relogio.classList.remove('pausado')
             clearInterval(timer)
+            iniciaRelogio()
         }
 
-        if(el.classList.contains('pausar')) {
+        if (el.classList.contains('pausar')) {
             clearInterval(timer)
             relogio.classList.add('pausado')
         }
     })
 }
 relogio()
-
-// Código acima não funcionou
-
-// O código comentado abaixo funcionou
