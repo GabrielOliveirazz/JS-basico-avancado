@@ -1,8 +1,7 @@
 function multiplicador(multiplicador) {
-    function multiplicacao(n) {
+    return function(n) {
         return n * multiplicador
     }
-    return n * multiplicador
 }
 
 const duplica = multiplicador(2)
