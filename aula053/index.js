@@ -5,5 +5,6 @@ function retornaFuncao() {
     }
 }
 
-const funcao = retornaFuncao
-console.log(funcao)
+const funcao = retornaFuncao('Ray')
+const funcao2 = retornaFuncao('Scar')
+console.log(funcao(), funcao2())
