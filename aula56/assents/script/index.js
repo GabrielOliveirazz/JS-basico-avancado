@@ -7,6 +7,7 @@ function criaCalculadora() {
             this.pressionaEnter()
         },
 
+        // Faz a conta também ser realizada caso aperte e solte a tecla enter
         pressionaEnter() {
             this.display.addEventListener('keyup', e => {
                 if (e.keyCode === 13) {
@@ -15,6 +16,7 @@ function criaCalculadora() {
             })
         },
 
+        // Faz a conta
         realizaConta() {
             let conta = this.display.value
 
@@ -33,14 +35,17 @@ function criaCalculadora() {
             }
         },
 
+        // Botão de Clear (Apagar Tudo)
         clearDisplay() {
             this.display.value = " "
         },
 
+        // Botão de apagar uma caractere só
         apagaUm() {
             this.display.value = this.display.value.slice(0, -1)
         },
 
+        // Adiciona o valor clicado no input
         cliqueBotoes() {
             document.addEventListener('click', e => {
                const el = e.target
