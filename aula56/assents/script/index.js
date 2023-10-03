@@ -37,7 +37,7 @@ function criaCalculadora() {
 
         // Botão de Clear (Apagar Tudo)
         clearDisplay() {
-            this.display.value = " "
+            this.display.value = ' '
         },
 
         // Botão de apagar uma caractere só
@@ -55,15 +55,18 @@ function criaCalculadora() {
                }
 
                if (el.classList.contains('btn-clear')) {
-                    this.clearDisplay
+                    this.clearDisplay()
                }
 
                if(el.classList.contains('btn-eq')) {
                     this.realizaConta()
                }
+
+               if(el.classList.contains('btn-del')) {
+                    this.apagaUm()
+               }
             })
         },
-
         btnParaDisplay(valor) {
             this.display.value += valor
         }
