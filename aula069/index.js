@@ -1,13 +1,12 @@
-const pessoa1 = new Object()
-pessoa1.nome = 'Gabriel'
-pessoa1.sobrenome = 'Oliveira'
-pessoa1.idade = 16
-pessoa1.falarNome = function() {
-    return console.log(`${this.nome} ${this.sobrenome} está falando seu nome e sua idade ${this.idade})
-}
-pessoa1.getDataNascimento = function() {
-    const dataAtual = new Date()
-    return dataAtual.getFullYear() - this.idade
+function Pessoa(nome, sobrenome) {
+    this.nome = nome
+    this.sobrenome = sobrenome
 }
 
-console.log(pessoa1.getDataNascimento())
+// {} <- this ->número
+const p1 = new Pessoa('Gabriel', 'Oliveira')
+const p2 = new Pessoa('Rayanne', 'Nayara')
+
+console.log(p1)
+console.log(p2)
+
