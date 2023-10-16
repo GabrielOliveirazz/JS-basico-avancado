@@ -3,7 +3,7 @@ const sobrenome = 'Oliveira'
 const idade = 16
 const peso = 58
 const altura = 1.68
-let imc = 17.71541950113379
+let imc = 17.71541950113379 // Peso / (altura * altura)  
 let anoNasc 
 anoNasc = 2023 - idade 
 
