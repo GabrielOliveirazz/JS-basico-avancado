@@ -11,5 +11,3 @@ let sobrenomeAluno = null  // Nulo não aponta pra local nenhum na memória
 
 const aprovado = true // Valor bolean Verdadeiro ou Falso
 const reprovado = false // Valor bolean Verdadeiro ou Falso
-
-
