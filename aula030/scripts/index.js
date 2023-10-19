@@ -88,9 +88,8 @@ function criaDate(data) {
 }
 
 h1.innerHTML = criaDate(data)
-*/
 
-/*
+*/
 const h1 = document.querySelector('#container h1')
 const data = new Date()
 const opcoes = {
