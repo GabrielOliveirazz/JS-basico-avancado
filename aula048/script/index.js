@@ -7,13 +7,26 @@ function criaLi() {
     return li
 }
 
-function criaTarefa(textoInput) {
-    const li = criali()
-    li.innerText = textoInput
-    tarefas.appendChild(li)
+inputTarefa.addEventListener('keypress', function(e) {
+    if (e.keyCode === 13) {
+        if (!inputTarefa.value) return
+        criaTarefa(inputTarefa.value)
+    }
+})
+
+function limpaInput() {
+    inputTarefa.value = ""
+    inputTarefa.focus
 }
 
-btnTarefa.addEventListener('click', function(e) {
-    if(!inputTarefa.value) return
+function criaTarefa(textoInput) {
+    const li = criaLi()
+    li.innerText = textoInput
+    tarefas.appendChild(li)    
+}
+
+btnTarefa.addEventListener('click', function() {
+    if (!inputTarefa.value) return
+    console.log(inputTarefa.value)
     criaTarefa(inputTarefa.value)
-})  
+})
