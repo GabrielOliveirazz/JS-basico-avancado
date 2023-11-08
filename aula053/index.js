@@ -8,3 +8,5 @@ function retornaFuncao() {
 const funcao = retornaFuncao('Ray')
 const funcao2 = retornaFuncao('Scar')
 console.log(funcao(), funcao2())
+
+
