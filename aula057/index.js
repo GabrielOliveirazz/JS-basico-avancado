@@ -21,3 +21,4 @@ const p1 = new Pessoa('Gabriel', 'Oliveira')
 const p2 = new Pessoa('Rayanne', 'Nayara')
 
 p2.metodo()
+
