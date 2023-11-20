@@ -17,5 +17,5 @@ for (const pessoa of pessoas) {
     const { id } = pessoa 
     novasPessoas.set(id,  { ...pessoa })
 }
-
+0
 console.log(novasPessoas)
