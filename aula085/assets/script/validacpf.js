@@ -45,6 +45,6 @@ class ValidaCPF {
     }
 }
 
-let validaCPF = new ValidaCPF('070.987.720-03')
+//let validaCPF = new ValidaCPF('070.987.720-03')
 
-console.log(validaCPF.valida())
+//console.log(validaCPF.valida())
