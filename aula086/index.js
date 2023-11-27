@@ -6,23 +6,26 @@ function rand(min, max) {
 
 function esperaAi(msg, tempo) {
     return new Promise((resolve, reject) => {
+        if(typeof msg !== 'string') reject('BAD VALUE')
         setTimeout(() => {
             resolve(msg)
         }, tempo)
     })
 }
 
-esperaAi('Frase 1', rand(1, 3))
+esperaAi('conexão com o BD', rand(1, 3))
     .then(resposta => {
         console.log(resposta)
-        return esperaAi('Frase 2', rand(1, 3))
+        return esperaAi('Buscando dados da base', rand(1, 3))
     })
     .then(resposta => {
         console.log(resposta)
-        return esperaAi('Frase 3', rand(1, 3))
+        return esperaAi(22222, rand(1, 3))
     }).then(resposta => {
         console.log(resposta)
     }).then(() => {
-        console.log('Eu sou o último then')
+        console.log('Exibe os dados')
     })
-    .catch()
+    .catch(e => {
+        console.log('ERRO', e)
+    })
