@@ -1,15 +1,28 @@
-function aleatorio(min, max) {
+function rand(min, max) {
+    min *= 1000
+    max *= 1000
     return Math.floor(Math.random() * (max - min) + min)
 }
 
 function esperaAi(msg, tempo) {
-    setTimeout(() => {
-        console.log(msg)
-    }, tempo)
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(msg)
+        }, tempo)
+    })
 }
 
-esperaAi('frase 1', 1000)
-esperaAi('frase 2', 2000)
-esperaAi('frase 3', 3000)
-esperaAi('frase 4', 4000)
-
+esperaAi('Frase 1', rand(1, 3))
+    .then(resposta => {
+        console.log(resposta)
+        return esperaAi('Frase 2', rand(1, 3))
+    })
+    .then(resposta => {
+        console.log(resposta)
+        return esperaAi('Frase 3', rand(1, 3))
+    }).then(resposta => {
+        console.log(resposta)
+    }).then(() => {
+        console.log('Eu sou o último then')
+    })
+    .catch()
